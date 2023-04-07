@@ -1,0 +1,56 @@
+#image-gallery {
+  color: white;
+  background-color: rgb(23, 23, 23) !important;
+}
+.image-column img:hover {
+  transition: transform 0.5s ease;
+}
+
+.image-column img:hover {
+  transform: scale(1.1);
+}
+
+.image-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal image-columns that sits next to each other */
+.image-column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.image-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two image-column-layout instead of four image-columns */
+@media screen and (max-width: 800px) {
+  .image-column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two image-columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .image-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.lg_team_sec {
+  height: 100px;
+  background: linear-gradient(to top, rgb(31, 31, 31), rgb(23, 23, 23));
+}

@@ -1,0 +1,26 @@
+.signup {
+  padding: 5rem;
+  position: relative;
+  justify-content: center;
+  height: auto;
+}
+#alert_box {
+  height: 0px;
+}
+.signup__container {
+  width: 38%;
+  height: 32rem;
+  background-color: azure;
+  position: absolute;
+  left: 28%;
+  opacity: 1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup__container__heading {
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
