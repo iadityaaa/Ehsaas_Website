@@ -1,0 +1,29 @@
+/* .trailer {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  transform: translate(50%, 50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  opacity: 0;
+}
+.trailer video {
+  max-width: 70%;
+  outline: none;
+}
+.trailer.active {
+  visibility: visible;
+  opacity: 1;
+}
+.close {
+  color: red;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+} */

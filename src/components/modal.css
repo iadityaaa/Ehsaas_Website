@@ -1,0 +1,35 @@
+.alert__box {
+  height: 5rem;
+  width: 100%;
+  top: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alert {
+  height: 5rem;
+  width: 80rem;
+  background-color: aliceblue;
+  top: 2rem;
+  color: rgb(27, 3, 3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s;
+  margin: 0 auto;
+  position: absolute;
+}
+.message {
+  align-self: center;
+  margin: 0 auto;
+}
+.cross {
+  align-self: flex-start;
+  cursor: pointer;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}

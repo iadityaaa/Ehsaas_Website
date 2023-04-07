@@ -1,0 +1,31 @@
+#aboutUs {
+  background-color: rgb(5, 5, 5) !important;
+  height: auto;
+}
+
+#aboutUs h3 {
+  color: rgb(178, 62, 62);
+}
+
+.about {
+  padding: 0;
+  color: white;
+  font-family: monospace;
+  font-size: x-large;
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+    font-size: large;
+  }
+}
+.lg_aboutus_sec {
+  height: 100px;
+  background: linear-gradient(to top, rgb(8, 8, 8), rgb(5, 5, 5));
+}
+
+@media screen and (max-width: 700px) {
+  .about {
+    font-size: 12px;
+  }
+}

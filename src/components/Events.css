@@ -1,0 +1,200 @@
+#events {
+  background-color: rgb(11, 11, 11) !important;
+  height: auto;
+}
+@media screen and (max-width: 368px) {
+  #card1 {
+    display: none;
+  }
+}
+
+#events h3 {
+  color: rgb(178, 62, 62);
+}
+#mob_card {
+  color: rgb(107, 93, 93);
+  font-size: 200px;
+  transition: 10 0.5 ease;
+}
+#mob_card:hover {
+  color: rgb(190, 30, 30);
+  font-size: 220px;
+}
+@media screen and (min-width: 369px) {
+  #mob_card {
+    display: none;
+  }
+}
+.extra_event {
+  background-color: rgb(11, 11, 11);
+}
+/*linear gradient colour*/
+.lg_video_sec {
+  height: 100px;
+  background: linear-gradient(to top, rgb(15, 15, 15), rgb(11, 11, 11));
+}
+
+.wrapper {
+  padding: 2rem;
+}
+.stage {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1600px) {
+  #card3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1038px) {
+  #card2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 738px) {
+  #card1 {
+    display: none;
+  }
+  #card_wrapper {
+    padding: 0 auto;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .stage {
+    list-style: none;
+    display: block;
+    justify-content: center;
+  }
+  #card_wrapper {
+    padding: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #card_wrapper {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 438px) {
+  #card_wrapper {
+    padding: 0 auto;
+  }
+}
+@media screen and (max-width: 395px) {
+  #card_wrapper {
+    padding: 0 auto;
+  }
+}
+.scene {
+  width: 250px;
+  height: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  perspective: 1000px;
+}
+.movie {
+  transform-style: preserve-3d;
+  transform: translateZ(-130px);
+  transition: transform 350ms;
+}
+.movie:hover {
+  transform: rotateY(-78deg) translateZ(20px);
+}
+.movie .poster,
+.movie .info {
+  position: absolute;
+  width: 260px;
+  height: 450px;
+  background-color: rgb(85, 10, 10);
+  backface-visibility: hidden;
+}
+.movie .poster {
+  transform: translateZ(130px);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.movie .info {
+  transform: rotateY(90deg) translateZ(130px);
+  border: 1px solid #eae5e5;
+  font-size: 0.75em;
+}
+.movie::after {
+  content: "";
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+  transform-origin: 100% 100%;
+  transform: rotateX(90deg) translateY(130px);
+  transition: box-shadow 350ms;
+}
+
+.movie:hover::after {
+  box-shadow: 20px -5px 50px rgba(0, 0, 0, 0.3);
+}
+.info header {
+  color: #fff;
+  padding: 7px 10px;
+  height: 195px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-shadow: 0px 15px 15px rgba(0, 0, 0, 1);
+}
+
+.info header h1 {
+  margin: 0 0 2px;
+  font-size: 1.4em;
+}
+
+.info header .rating {
+  border: 1px solid #fff;
+  padding: 0px 3px;
+}
+
+.info p {
+  padding: 1.2em 1.4em;
+  margin: 2px 0 0;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+  color: rgb(253, 246, 246);
+  line-height: 1.4em;
+  border-top: 10px solid #555;
+}
+.movie .poster,
+.movie .info,
+.movie .info header {
+  transition: box-shadow 350ms;
+}
+
+.movie .poster {
+  box-shadow: inset 300px 0px 400px rgba(255, 255, 255, 0);
+}
+
+.movie:hover .poster {
+  box-shadow: inset 300px 0px 400px rgba(50, 47, 47, 0.8);
+}
+.movie .info,
+.movie .info header {
+  box-shadow: inset -300px 0px 400px rgba(0, 0, 0, 0.5);
+}
+
+.movie:hover .info,
+.movie:hover .info header {
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0);
+}
+
+.lg_video_sec {
+  height: 100px;
+  background: linear-gradient(to top, rgb(15, 15, 15), rgb(11, 11, 11));
+}
+.card__event__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

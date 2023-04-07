@@ -1,0 +1,57 @@
+#eventsConducted {
+  color: white;
+  background-color: rgb(8, 8, 8) !important;
+}
+
+.event-image-column img:hover {
+  transition: transform 0.5s ease;
+}
+
+.event-image-column img:hover {
+  transform: scale(1.05);
+}
+
+.event-image-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal event-image-columns that sits next to each other */
+.event-image-column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.event-image-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two event-image-column-layout instead of four event-image-columns */
+@media screen and (max-width: 800px) {
+  .event-image-column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two event-image-columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .event-image-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.lg_events2_sec {
+  height: 100px;
+  background: linear-gradient(to top, rgb(11, 11, 11), rgb(8, 8, 8));
+}

@@ -1,0 +1,96 @@
+.team {
+  color: white;
+  background-color: rgb(31, 31, 31) !important;
+}
+
+.team-cards {
+  margin: 0 2%;
+  display: grid;
+  grid-gap: 2rem;
+}
+.team-card {
+  background-color: #d3d3d3;
+  color: black;
+  border-radius: 7px;
+  padding: 0 25px;
+}
+
+.team-card:hover {
+  background-color: white;
+  transform: scale(1.05);
+  transition: transform 1s ease;
+}
+
+.circular--portrait {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 20px 0 20px 20px;
+}
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+.text-section .details {
+  padding: 2.5rem 0;
+}
+.text-section .name {
+  font-size: x-large;
+  font-weight: 200;
+}
+
+.text-section .post {
+  color: red;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.lg_contact_sec {
+  height: 100px;
+  background: linear-gradient(to top, rgb(39, 39, 39), rgb(31, 31, 31));
+}
+
+@media (min-width: 600px) {
+  .team-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team-card {
+    margin: 0 10%;
+  }
+}
+
+@media (max-width: 800px) {
+  .team-card {
+    margin: 0 5%;
+  }
+
+  .circular--portrait {
+    margin: 30%;
+    width: 100px;
+    height: 100px;
+  }
+}
+/* Screen larger than 900px? 2 columns */
+@media (min-width: 1200px) {
+  .team-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-card {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .circular--portrait {
+    width: 75px;
+    height: 75px;
+  }
+  .text-section .name {
+    font-size: medium;
+  }
+}

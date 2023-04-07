@@ -1,0 +1,186 @@
+header {
+  font-family: "Black Han Sans";
+}
+
+/* sticky header */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  opacity: 0.5;
+  z-index: 1;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 200px;
+}
+/*
+trailer */
+.trailer {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  transform: translate(50%, 50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  visibility: hidden;
+  opacity: 0;
+}
+.trailer video {
+  max-width: 70%;
+  outline: none;
+}
+.trailer.active {
+  visibility: visible;
+  opacity: 1;
+}
+.close {
+  color: red;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+div.navbg.navbar.navbar-expand-lg.navbar-dark {
+  padding: 0px;
+}
+div.bar.container-fluid {
+  padding: 0px;
+}
+.navbg {
+  background-color: black;
+}
+#navbarNavAltMarkup {
+  padding-left: 10rem;
+}
+@media screen and (max-width: 1300px) {
+  #navbarNavAltMarkup {
+    padding-left: 3rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #navbarNavAltMarkup {
+    padding-left: 0rem;
+  }
+}
+@media screen and (max-width: 980px) {
+}
+.masthead {
+  background-size: cover;
+  min-height: 60vh;
+}
+/* #bouncing_logo {
+  animation: animate 5s linear infinite;
+} */
+/* #bouncing_logo_mob{
+    animation: animate_mob 5s linear infinite;
+} */
+#main_text {
+  font-size:larger;
+  border-left: solid rgb(190, 30, 30) 10px;
+  animation: jump 1s 0.2s ease;
+}
+@keyframes jump {
+  0% {
+    transform: translatex(-200px);
+  }
+
+  100% {
+    transform: translatex(0px);
+  }
+}
+/* @keyframes animate_mob {
+    0%,100%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+} */
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+/*hover effects*/
+/* .nav-link h4 {
+  transition: 4 0.5 ease-in;
+}
+.nav-link h4:hover {
+  color: rgb(190, 30, 30);
+} */
+/* upcoming events */
+#events {
+  background-color: rgb(11, 10, 10);
+  height: auto;
+}
+/* #event_row{
+   Were trying to reduce the extra whitespace appearing due to row margin 
+} */
+#events h3 {
+  color: rgb(190, 30, 30);
+}
+.extra_event {
+  background-color: rgb(11, 10, 10);
+}
+/* about section */
+#about {
+  background-color: rgb(11, 13, 15);
+}
+
+/* fading effect */
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 0.5s ease-in;
+}
+.active.fade-bottom2 {
+  animation: fade-bottom2 1s ease-in;
+}
+.active.fade-bottom3 {
+  animation: fade-bottom3 1.25s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-bottom2 {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-bottom3 {
+  0% {
+    transform: translatey(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
