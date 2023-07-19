@@ -49,7 +49,7 @@ const Intro = () => {
               id="main_text"
             >
               <h2>
-                <div className="display-2 fw-bolder ">
+                <div className="display-2 fw-bolder">
                   EHSAAS DRAMATICS SOCIETY
                 </div>
                 <div className=" text-muted">Welcomes You</div>

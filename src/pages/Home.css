@@ -70,10 +70,10 @@ div.bar.container-fluid {
 }
 @media screen and (max-width: 980px) {
 }
-.masthead {
+/* .masthead {
   background-size: cover;
-  min-height: 60vh;
-}
+  min-height: vh;
+} */
 /* #bouncing_logo {
   animation: animate 5s linear infinite;
 } */
@@ -81,7 +81,6 @@ div.bar.container-fluid {
     animation: animate_mob 5s linear infinite;
 } */
 #main_text {
-  font-size:larger;
   border-left: solid rgb(190, 30, 30) 10px;
   animation: jump 1s 0.2s ease;
 }

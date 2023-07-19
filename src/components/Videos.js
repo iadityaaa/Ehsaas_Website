@@ -91,7 +91,7 @@ const Videos = () => {
                 playing={false}
                 controls
                 width="100%"
-                height="600px"
+                height="750px"
               />
             </div>
             <div
@@ -99,7 +99,7 @@ const Videos = () => {
               style={{
                 width: "20%",
                 overflow: "scroll",
-                height: "600px",
+                height: "750px",
                 overflowX: "hidden",
               }}
               id="style-4"
